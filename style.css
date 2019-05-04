@@ -3,18 +3,41 @@ body{
     margin: 0;
     padding: 0;
     background-color: cornflowerblue;
-    background-size: cover;    
+    /*background-size: cover;*/    
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: #55d6aa;
+}
+
+header::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left:
+
+}
+
+nav{
+    float: right;
 }
 
 .box{
     width: 450px;
     background rgba(0, 0, 0, 0.4);
     padding: 40px;
-    text-align:center;
-    margin:auto;
-    margin-top:5%;
-    color:white;
-    font-family: 'Century Gothuc', sans_serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic', sans_serif; 
 }
 
 .box-img{
