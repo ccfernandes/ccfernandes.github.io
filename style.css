@@ -1,20 +1,24 @@
 
+header{
+    background: #55d6aa;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background-color: cornflowerblue;
+    background-color: #222;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
     /*background-size: cover;*/    
 }
+
 .container{
     width: 80%;
     margin: 0 auto;
 }
 
-header{
-    background: #55d6aa;
-}
 
-/*
+/* do this if header disappears 
 header::after{
     content:'';
     display: table;
@@ -24,12 +28,31 @@ header::after{
 
 .logo{
     float: left:
+    padding: 15px 0;
 }
 
 nav{
     float: right;
 }
 
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top:20px;
+}
+
+nav a{
+    color: #444;
+    text-decoration: : none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 
 .box{
     width: 450px;
@@ -39,7 +62,7 @@ nav{
     margin: auto;
     margin-top: 5%;
     color: white;
-    font-family: 'Century Gothic', sans_serif; 
+    font-family: 'Abel', sans-serif; 
 }
 
 .box-img{
