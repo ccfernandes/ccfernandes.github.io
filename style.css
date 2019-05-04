@@ -1,13 +1,14 @@
 
 header{
-    background: #55d6aa;
+    background:  #cce6ff;
 }
 
 body{
     margin: 0;
     padding: 0;
-    background-color: #222;
+    background-color: #f2f2f2;
     font-family: 'Abel', sans-serif;
+    color: #444;
     font-size: 16px;
     /*background-size: cover;*/    
 }
@@ -80,37 +81,27 @@ nav a::before{
     text-align: center;
     margin: auto;
     margin-top: 5%;
-    color: white;
+    color: #444;
     font-family: 'Abel', sans-serif; 
+    border-style: solid;
+    border-color: #b3daff;
 }
 
-.link{
+/*my name*/
+.box > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.links{
     display: inline-block; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.links > p {
     text-align: center;
-    width: 450px;
-    background rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    margin: auto;
-    margin-top: 5%;
-    color: white;
-    font-family: 'Abel', sans-serif; 
 }
 
-.link > p{
-    text-align: center;
-    width: 450px;
-    background rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    margin: auto;
-    margin-top: 5%;
-    color: white;
-    font-family: 'Abel', sans-serif; 
-}
-
-
-
-.box-img{
-    border-radius:50%;
-    width: 200px;
-    height: 200px;
-}
