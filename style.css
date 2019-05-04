@@ -2,7 +2,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: cornflowerblue;
     /*background-size: cover;*/    
 }
 .container{
@@ -14,20 +13,22 @@ header{
     background: #55d6aa;
 }
 
+/*
 header::after{
     content:'';
     display: table;
     clear: both;
 }
+*/
 
 .logo{
     float: left:
-
 }
 
 nav{
     float: right;
 }
+
 
 .box{
     width: 450px;
