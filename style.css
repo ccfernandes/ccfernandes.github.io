@@ -45,6 +45,8 @@ nav li{
     display: inline-block;
     margin-left: 70px;
     padding-top:20px;
+
+    position: relative;
 }
 
 nav a{
@@ -52,6 +54,23 @@ nav a{
     text-decoration: : none;
     text-transform: uppercase;
     font-size: 14px;
+
+    position: relative;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+/*supposed to be for a little design on top of nav titles*/
+/*in my link, before the txt*/
+/*right now this doesn't do anything*/
+nav a::before{
+    content:'';
+    display block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;  
 }
 
 .box{
@@ -64,6 +83,31 @@ nav a{
     color: white;
     font-family: 'Abel', sans-serif; 
 }
+
+.link{
+    display: inline-block; 
+    text-align: center;
+    width: 450px;
+    background rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Abel', sans-serif; 
+}
+
+.link > p{
+    text-align: center;
+    width: 450px;
+    background rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Abel', sans-serif; 
+}
+
+
 
 .box-img{
     border-radius:50%;
