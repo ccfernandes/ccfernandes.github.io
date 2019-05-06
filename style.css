@@ -13,6 +13,12 @@ body{
     /*background-size: cover;*/    
 }
 
+.intro{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -45,7 +51,7 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 70px;
-    padding-top:20px;
+    padding-top:40px;
 
     position: relative;
 }
@@ -98,6 +104,12 @@ nav a::before{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 25%;
+}
+
+.break{
+    margin-left: auto;
+    margin-right: auto;
     width: 35%;
 }
 
@@ -105,3 +117,6 @@ nav a::before{
     text-align: center;
 }
 
+.contact{
+    text-align: center;
+}
