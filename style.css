@@ -123,9 +123,7 @@ nav a::before{
 
 .intro{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
+    width: 55%;
 }
 
 .education{
@@ -162,4 +160,35 @@ nav a::before{
     margin-left: 30px;
     margin-right: 150px;
     background-color: #F6FAFA;
+}
+
+.newCourses > h2{
+    margin-left: 30px;
+    margin-right: 150px;
+    background-color: #F6FAFA;
+}
+
+.newCourses > ul{
+    margin-left: 60px;
+}
+
+.project1{
+    margin-left: 30px;
+}
+
+.project1 > p{
+    margin-left: 60px;
+}
+
+.project1 > h2{
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.project1 > h3{
+    margin-left: 30px;
+}
+
+.project1 > ul{
+    margin-left: 60px;
 }
