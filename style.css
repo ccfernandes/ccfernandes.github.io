@@ -1,4 +1,5 @@
 
+/************index.html***************/
 header{
     background:  #cce6ff;
 }
@@ -13,7 +14,7 @@ body{
     /*background-size: cover;*/    
 }
 
-.intro{
+.ending, .intro{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -125,7 +126,7 @@ nav a::before{
     text-align: center;
     width: 55%;
 }
-
+/************resume.html***************/
 .education{
     margin-left: 30px;
 }
@@ -172,6 +173,7 @@ nav a::before{
     margin-left: 60px;
 }
 
+/************projects.html***************/
 .project1{
     margin-left: 30px;
 }
@@ -186,9 +188,19 @@ nav a::before{
 }
 
 .project1 > h3{
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .project1 > ul{
     margin-left: 60px;
 }
+
+.project2{
+    margin-left: 30px;
+}
+
+.project2 > p, .project2 > h3{
+    margin-left: 60px;
+}
+
+/**********portfolio.html**************/
