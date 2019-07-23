@@ -22,39 +22,41 @@
             </div>
     </header>
     <body>
-        <div class ="project1">
-            <h1>1. RiverNet Sensor Package</h1>
-            <h2>Project overview: </h2>
-            <p>This project was completed during my research internship in the summer of 2019.
-                The premise of the project was to build a sensor pod that could be deployed in the local Guadalupe river for a professor in the SCU Environmental Science dpt.
-            </p>
-            <p>The final product uses the Arduino Pro Mini and SD card shield to write data to a .CSV file. This is connected to sensors that record 
-                temperature. The electrical components are then enclosed in a waterproof container that is disguised as a rock. 
-            </p>
-            <h3>language used: C++</h2>
-            <img src="pictures/riverPackage.jpg" width="250" height="160" alt="River Package" class="project1">
-            <h2>Github Link to Project: </h2>
-            <p>Insert link here</p>
-            <h2>Project components: </h2>
-            <h3>Software: </h3>
-            <ul>
-                <li>An arduino file (.ino) that writes to an SD card at user-defined intervals (the project required readings to be taken once every hour) </li>
-                <li>A sensor interface file (.hpp) that defines virtual functions, common between the different sensors</li>
-                <li>A class for each sensor, that includes a readData() function to retrieve data from the sensor.</li>
-            </ul>  
-            <h3>Design Decisions: </h3>
-            <ul>
-                <li>An Arduino Pro Mini was used instead of a Arduino Uno in order to reduce power consumption</li>
-                <li>A sensor interface was implemented in order to make it easier to add more sensors in the future</li>
-                <li>A sleep mode function using the SleepyPi2 library was made to take periodic readings</li>
-            </ul>
-        </div>
-        <div class="project2">
-            <h1>2. This Website!</h1>
-            <p>I made this website as a way to gain a better understanding of web development, and will continue to develop this site as 
-                I become more experienced. 
-            </p>
-            <h3>languages used: HTML, CSS, JavaScript</h3>
+        <div class = "parallax">
+            <div class ="project1">
+                <h1>1. RiverNet Sensor Package</h1>
+                <h2>Project overview: </h2>
+                <p>This project was completed during my research internship in the summer of 2019.
+                    The premise of the project was to build a sensor pod that could be deployed in the local Guadalupe river for a professor in the SCU Environmental Science dpt.
+                </p>
+                <p>The final product uses the Arduino Pro Mini and SD card shield to write data to a .CSV file. This is connected to sensors that record 
+                    temperature. The electrical components are then enclosed in a waterproof container that is disguised as a rock. 
+                </p>
+                <h3>language used: C++</h2>
+                <img src="pictures/riverPackage.jpg" width="250" height="160" alt="River Package" class="project1">
+                <h2>Github Link to Project: </h2>
+                <p>Insert link here</p>
+                <h2>Project components: </h2>
+                <h3>Software: </h3>
+                <ul>
+                    <li>An arduino file (.ino) that writes to an SD card at user-defined intervals (the project required readings to be taken once every hour) </li>
+                    <li>A sensor interface file (.hpp) that defines virtual functions, common between the different sensors</li>
+                    <li>A class for each sensor, that includes a readData() function to retrieve data from the sensor.</li>
+                </ul>  
+                <h3>Design Decisions: </h3>
+                <ul>
+                    <li>An Arduino Pro Mini was used instead of a Arduino Uno in order to reduce power consumption</li>
+                    <li>A sensor interface was implemented in order to make it easier to add more sensors in the future</li>
+                    <li>A sleep mode function using the SleepyPi2 library was made to take periodic readings</li>
+                </ul>
+            </div>
+            <div class="project2">
+                <h1>2. This Website!</h1>
+                <p>I made this website as a way to gain a better understanding of web development, and will continue to develop this site as 
+                    I become more experienced. 
+                </p>
+                <h3>languages used: HTML, CSS, JavaScript</h3>
+            </div>
         </div>
     </body>
 </html>
