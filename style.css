@@ -1,7 +1,8 @@
 
 /************index.html***************/
 header{
-    background:  #cce6ff;
+    background:  #d1dfff;
+    /* background: white; */
 }
 
 .parallax{
@@ -161,6 +162,15 @@ nav a::before{
     margin-left: 60px;
 }
 
+.experience > h2{
+    margin-right: 150px;
+    background-color: #b3cce6;
+}
+
+.experience{
+    margin-left: 60px;
+}
+
 .courses{
     margin-left: 30px;
 }
@@ -209,20 +219,26 @@ nav a::before{
     margin-right: 150px;
 }
 
-.project1 > h3{
+.project1 > h3, .project1 > ul{
     margin-left: 60px;
 }
 
-.project1 > ul{
+/* .project1 > ul{
     margin-left: 60px;
-}
+} */
 
 .project2{
     margin-left: 30px;
+    margin-bottom: 25px;
 }
 
-.project2 > p, .project2 > h3{
+.project2 > p, .project2 > h3, .project2 > h2{
     margin-left: 60px;
+}
+
+.project1 > h1, .project2 > h1{
+    margin-left: 10px;
+    background-color: #b3cce6;
 }
 
 /**********portfolio.html**************/
