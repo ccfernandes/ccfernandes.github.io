@@ -25,24 +25,6 @@ body{
     /*background-size: cover;*/    
 }
 
-.box{
-    width: 450px;
-    background rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    color: #444;
-    font-family: 'Abel', sans-serif; 
-    border-style: solid;
-    border-color: #b3daff;
-}
-
-/*my name*/
-.box > h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-}
 .intro{
     margin-left: auto;
     margin-right: auto;
@@ -136,10 +118,6 @@ nav a::before{
     width: 35%;
 }
 
-.links > p {
-    text-align: center;
-}
-
 .contact{
     text-align: center;
 }
@@ -148,70 +126,10 @@ nav a::before{
     text-align: center;
     width: 55%;
 }
-/************resume.html***************/
-.education{
-    margin-left: 30px;
-}
-
-.education > h2{
-    margin-right: 150px;
-    background-color: #b3cce6;
-}
-
-.education > p{
-    margin-left: 60px;
-}
-
-.experience > h2{
-    margin-right: 150px;
-    background-color: #b3cce6;
-}
-
-.experience{
-    margin-left: 60px;
-}
-
-.courses{
-    margin-left: 30px;
-}
-
-.courses > p{
-    margin-left: 60px;
-}
-
-.courses > h2{
-    margin-right: 150px;
-    background-color: #b3cce6;
-}
-
-.skills > ul{
-    margin-left: 60px;
-}
-
-.skills > h2{
-    margin-left: 30px;
-    margin-right: 150px;
-    background-color: #b3cce6;
-} 
-
-.newCourses > h2{
-    margin-left: 30px;
-    margin-right: 150px;
-    background-color: #b3cce6;
-}
-
-
-.newCourses > ul{
-    margin-left: 60px;
-}
 
 /************projects.html***************/
 .project1{
     margin-left: 30px;
-}
-
-.project1 > p{
-    margin-left: 60px;
 }
 
 .project1 > h2{
@@ -222,10 +140,6 @@ nav a::before{
 .project1 > h3, .project1 > ul{
     margin-left: 60px;
 }
-
-/* .project1 > ul{
-    margin-left: 60px;
-} */
 
 .project2{
     margin-left: 30px;
@@ -240,5 +154,3 @@ nav a::before{
     margin-left: 10px;
     background-color: #b3cce6;
 }
-
-/**********portfolio.html**************/
