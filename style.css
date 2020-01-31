@@ -1,8 +1,9 @@
 
 /************index.html***************/
 header{
-    background:  #e1eaea;
+    background:  ##383838;
     /* background: white; */
+    margin-bottom: 1rem;
 }
 
 footer{
@@ -88,7 +89,7 @@ nav li{
 }
 
 nav a{
-    color: #444;
+    color: #white;
     text-decoration: : none;
     text-transform: uppercase;
     font-size: 14px;
