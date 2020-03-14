@@ -3,120 +3,105 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="UTF-8">
         <title>Home</title>
 
     </head>
-    <!--navagation bar-->
     <style>
-        /*@media (max-width: 700px) {
-          .container {
-            grid-template-areas:
-              'nav'
-              'showcase';
-        }*/
-
-        /*.intro{
-            font-family:'Source Code Pro', monospace;
-            font-size: 110%;
-        }*/
-
-        .box{
-            grid-area: box;
-            width: 800px;
-            background rgba(0, 0, 0, 0.4);
-            padding: 50px;
-            text-align: center;
-            margin: auto;
-            margin-top: 5%;
-            color: #444;
-            font-family: 'Abel', sans-serif; 
-            border-style: solid;
-            border-color: #a6a6a6;
-        }
-
-/*my name*/
-        .box > h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: lighter;
-        }
-
-        .links {
-            grid-area: links;
-            /*border-style: solid;
-            border-color: #737373;*/
-            padding: 10px;
-            align-self: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .links h3 {
-            text-align: center;
-        }
-
-        .body {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-areas: 
-                'box links';
-            grid-template-columns: 3fr 0.7fr;
-        }
-    </style>
-    <header>
-        <div class="container">
-            <!-- <img src = "pictures/chelsGreen.png" alt="logo" class="logo"> -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="courseWork.html">Relevant CourseWork</a></li>
-                    <li><a href="projects.html">Coding Projects</a></li>
-                    <li><a href="newPortfolio.html">Photogtaphy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            .links {
+                grid-area: links;
+                /*border-style: solid;
+                border-color: #737373;*/
+                padding: 10px;
+                align-self: center;
+                align-items: center;
+                margin-top: 20px;
+            }
     
+            .links h3 {
+                text-align: center;
+            }
+            .box{
+                grid-area: box;
+                width: 800px;
+                background rgba(0, 0, 0, 0.4);
+                padding: 50px;
+                text-align: center;
+                margin: auto;
+                margin-top: 5%;
+                color: #444;
+                font-family: 'Abel', sans-serif; 
+                border-style: solid;
+                border-color: #a6a6a6;
+            }
+    
+    /*my name*/
+            .box > h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: lighter;
+            }
+    
+            .body {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-areas: 
+                    'box links';
+                grid-template-columns: 3fr 0.7fr;
+            }
+        </style>
+    <header>
+            <div class="container">
+                <!-- <img src = "pictures/chelsGreen.png" alt="logo" class="logo"> -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutMe.html">About Me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="courseWork.html">CourseWork</a></li>
+                        <li><a href="projects.html">Coding Projects</a></li>
+                        <li><a href="newPortfolio.html">Photogtaphy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
     <body>
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-        <!--information box-->
-        <div class = "parallax">
-            <section class="body">
-                <div class="box">
-                    <!-- <img src="pictures/profile.jpg" width="250" height="165"/> -->
-                    <img src= "pictures/chelsBeach.jpg"  width="300" height="200">
-                    <div class="intro">
-                        <h1>Chelsea Fernandes</h1>
-                    
-                        <h4>Santa Clara University</h4>
+            <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+            <!--information box-->
+            <div class = "parallax">
+                <section class="body">
+                    <div class="box">
+                        <!-- <img src="pictures/profile.jpg" width="250" height="165"/> -->
+                        <img src= "pictures/chelsBeach.jpg"  width="300" height="200">
+                        <div class="intro">
+                            <h1>Chelsea Fernandes</h1>
+                        
+                            <h4>Santa Clara University</h4>
+                        </div>
+                        <p>Hello! I am an aspiring software engineer studying computer science and engineering at Santa Clara University in Santa Clara, CA.
+                            Feel free to use the links in the menu as well as the icons on the right to find additional information about me!
+                        </p>
                     </div>
-                    <p>Hello! I am an aspiring software engineer studying computer science and engineering at Santa Clara University in Santa Clara, CA.
-                        Feel free to use the links in the menu as well as the icons below to find additional information about me!
-                    </p>
-                </div>
-                <!-- <div class="break"> -->
-                       <!--  <img src="icons/linedivider.png" height="100" width="488"> -->
-                <!-- </div> -->
-                <section class="links">
-                    <h3>Links to socials: </h3>
-                        <a href="https://www.linkedin.com/in/chelsea-fernandes-cse/">
-                            <img src="icons/linkedicon.png " height="75" width="75"/>
-                        <a href="https://github.com/ccfernandes">
-                            <img src = "icons/ghicon2.png" height="75" width="75" alt="Github"/>
-                        <a href="https://www.instagram.com/chelcphotos/">
-                            <img src = "icons/instagram.png" height="75" width="75" alt="Intagram"/>       
-                        <a href="https://chelcphotos.pixieset.com">
-                            <img src = "icons/camera.png" height="75" width="75" alt="Photography"/>     
-                        </a>    
+                    <!-- <div class="break"> -->
+                           <!--  <img src="icons/linedivider.png" height="100" width="488"> -->
+                    <!-- </div> -->
+                    <section class="links">
+                        <h3>Links to socials: </h3>
+                            <a href="https://www.linkedin.com/in/chelsea-fernandes-cse/">
+                                <img src="icons/linkedicon.png " height="75" width="75"/>
+                            <a href="https://github.com/ccfernandes">
+                                <img src = "icons/ghicon2.png" height="75" width="75" alt="Github"/>
+                            <a href="https://www.instagram.com/chelcphotos/">
+                                <img src = "icons/instagram.png" height="75" width="75" alt="Intagram"/>       
+                            <a href="https://chelcphotos.pixieset.com">
+                                <img src = "icons/camera.png" height="75" width="75" alt="Photography"/>     
+                            </a>    
+                    </section>
                 </section>
-            </section>
-        </div>
-    </body>
+            </div>
+        </body>
     <footer>
-        <p>Chelsea Fernandes &copy; 2019</p>
+        <p>Chelsea Fernandes &copy; 2020</p>
     </footer>
 </html> 
