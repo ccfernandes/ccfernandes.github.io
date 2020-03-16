@@ -4,6 +4,9 @@
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <meta charset="UTF-8">
         <title>Home</title>
 
@@ -56,35 +59,39 @@
         ul {
             margin-left: 30px;
         }
-
     </style>
     <header>
-        <div class="container">
-            <!-- <img src = "pictures/chelsGreen.png" alt="logo" class="logo"> -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutMe.html">About Me</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="courseWork.html">CourseWork</a></li>
-                    <li><a href="projects.html">Coding Projects</a></li>
-                    <li><a href="newPortfolio.html">Photogtaphy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                      <!-- <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Chelsea Fernandes</a>
+                      </div> -->
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutMe.html">About Me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="courseWork.html">Coursework</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="newPortfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+        </nav>
     </header>
     
     <body>
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <!--information box-->
         <div class = "parallax">
-            <h1>About Me</h1>
-            <img src= "pictures/chelsBeach.jpg"  width="300" height="200" class="center" >
+            <div class="intro">
+                <h1>About Me</h1>
+                <hr>
+                <img src= "pictures/chelsBeach.jpg"  width="300" height="200" class="center" >
+            </div>  
             <section class="body">
                 <br/>
                 <hr>
-                <h3>Hi, I'm Chelsea! I'm an aspiring software engineer studying computer science and engineering at Santa Clara University. 
+                <h4>Hi, I'm Chelsea! I'm an aspiring software engineer studying computer science and engineering at Santa Clara University. 
                     Some of my interests include web development and machine learning. I'm always ready to tackle a new problem and can work 
                     very well on a team. 
                     <br/> 
@@ -99,7 +106,7 @@
                     Apart from my technical interests, I am also a strong advocate for women in engineering. I am a member of the society of women
                     in engineering, where I take part in various supportive events and am able to bond with other women in the engineering department. 
                     I have attended the San Jose Women's March for the past 3 years, which I always find to be such an uplifting experience. 
-                </h3>
+                </h4>
 
             </section>
         </div>

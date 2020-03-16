@@ -4,6 +4,9 @@
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <meta charset="UTF-8">
         <title>Home</title>
 
@@ -22,13 +25,6 @@
 
         .links h3 {
             text-align: center;
-        }
-        .body {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-areas: 
-                'box links';
-            grid-template-columns: 3fr 0.7fr;
         }
         h1 {
             margin-left: 10px;
@@ -53,27 +49,29 @@
         }
     </style>
     <header>
-        <div class="container">
-            <!-- <img src = "pictures/chelsGreen.png" alt="logo" class="logo"> -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutMe.html">About Me</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="courseWork.html">CourseWork</a></li>
-                    <li><a href="projects.html">Coding Projects</a></li>
-                    <li><a href="newPortfolio.html">Photogtaphy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutMe.html">About Me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="courseWork.html">Coursework</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
             </nav>
-        </div>
     </header>
     
     <body>
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <!--information box-->
         <div class = "parallax">
-            <h1>Relevant Coursework</h1>
+            <div class="intro">
+                    <h1>Relevant Coursework</h1>
+                    <hr>
+            </div>
             <section class="body">
                 <div class="courses">
                     <h2>Related Courses Completed</h2>

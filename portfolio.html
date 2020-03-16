@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <title>Photography Portfolio</title>
+    </head>
+    <style>
+            .links {
+                grid-area: links;
+                /*border-style: solid;
+                border-color: #737373;*/
+                padding: 10px;
+                align-self: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+    
+            .links h3 {
+                text-align: center;
+            }
+            .box{
+                grid-area: box;
+                width: 800px;
+                background rgba(0, 0, 0, 0.4);
+                padding: 50px;
+                text-align: center;
+                margin: auto;
+                margin-top: 5%;
+                color: #444;
+                font-family: 'Abel', sans-serif; 
+                border-style: solid;
+                border-color: #a6a6a6;
+            }
+    
+    /*my name*/
+            .box > h1 {
+                font-family: 'Montserrat', sans-serif;
+                /* font-weight: lighter; */
+            }
+    
+            .body {
+                display: grid;
+                grid-gap: 20px;
+                grid-template-areas: 
+                    'box links';
+                grid-template-columns: 3fr 0.7fr;
+            }
+        </style>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="courseWork.html">Coursework</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+        </nav>
+</header>
+    <body>
+            <div class="container">
+              <div class="intro">
+                  <h1>Image Gallery</h1>
+                  <hr>
+                  <h4>The images below are previews of my portfolio.</h4>
+                  <h4>See the rest of my portfolio here: <a href="https://chelcphotos.pixieset.com">Click Here!</a></h4>
+                  <h4>Click on the images to enlarge them.</h4>
+              </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href="/pictures/Laurynn.jpg" target="_blank">
+                            <img src="/pictures/Laurynn.jpg" alt="Lights" style="width:100%">
+                            <div class="caption">
+                              <h4>16th ave. steps, San Francisco.</h4>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href="/pictures/Venice.jpg" target="_blank">
+                            <img src="/pictures/Venice.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                              <h4>Venice canal.</h4>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href="/pictures/pots.jpg" target="_blank">
+                            <img src="/pictures/pots.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                              <h4>Decorative pots in Majorca, Spain.</h4>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                            <div class="thumbnail">
+                              <a href="/pictures/prom1.jpg" target="_blank">
+                                <img src="/pictures/prom1.jpg" alt="Fjords" style="width:100%">
+                                <div class="caption">
+                                  <h4>Prom portrait of Hannah.</h4>
+                                </div>
+                              </a>
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="thumbnail">
+                              <a href="/pictures/lights.jpg" target="_blank">
+                                <img src="/pictures/lights.jpg" alt="Fjords" style="width:100%">
+                                <div class="caption">
+                                  <h4>Carousel lights, San Francisco.</h4>
+                                </div>
+                              </a>
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href="/pictures/Riley.jpg" target="_blank">
+                            <img src="/pictures/Riley.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                              <h4>Carousel lights, San Francisco.</h4>
+                            </div>
+                          </a>
+                    </div>
+                </div> 
+                    </div>
+                  </div>
+
+    </body>
+</html>
