@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <meta charset="UTF-8">
-        <title>Contact</title>
-    </head>
-    <style>
-        .links {
-            grid-area: links;
-            /*border-style: solid;
-            border-color: #737373;*/
-            padding: 10px;
-            align-self: center;
-            align-items: center;
-            margin-top: 20px;
-        }
 
-        .links h3 {
-            text-align: center;
-        }
-    </style>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div.contact').hide().fadeIn(2000).delay(1000)
+        });
+    </script>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<style>
+    .links {
+        grid-area: links;
+        /*border-style: solid;
+            border-color: #737373;*/
+        padding: 10px;
+        align-self: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .links h3 {
+        text-align: center;
+    }
+</style>
 
 <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                  <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutMe.html">About Me</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="courseWork.html">Coursework</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </div>
-        </nav>
-</header>
-    <body>
-        <div class="parallax">
-            <div class="contact">
-                <div class="intro">
-                        <h1>Contact Me!</h1>
-                        <hr>
-                </div>
-                <h3>Feel free to contact me via the following:</h3>
-                <h4>email:  ccfernandes@scu.edu</h4>
-                <h4>phone:  510-459-3568</h4>
-            </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="aboutMe.html">About Me</a></li> -->
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courseWork.html">Coursework</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </body>
-    <footer>
-        <p>Chelsea Fernandes &copy; 2020</p>
-    </footer>
+    </nav>
+</header>
+
+<body>
+    <div class="parallax">
+        <div class="contact">
+            <div class="intro">
+                <h1>Contact Me!</h1>
+                <hr>
+            </div>
+            <h3>Feel free to contact me via the following:</h3>
+            <h4>email: ccfernandes@scu.edu</h4>
+            <h4>phone: 510-459-3568</h4>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Chelsea Fernandes &copy; 2020</p>
+</footer>
+
 </html>

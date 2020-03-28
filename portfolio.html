@@ -7,7 +7,27 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <meta charset="UTF-8">
+         <script> $(document).ready(function () { 
+            $('div.intro').hide().fadeIn(2000).delay(1000)
+            $(window).scroll( function(){
+
+            /* Check the location of each desired element */
+            $('.hideme').each( function(i){
+
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+
+                    $(this).animate({'opacity':'1'},1000);
+
+                }    
+            }); 
+            }); 
+            });
+        </script>
+         <meta charset="UTF-8">
         <title>Photography Portfolio</title>
     </head>
     <style>
@@ -51,13 +71,14 @@
                     'box links';
                 grid-template-columns: 3fr 0.7fr;
             }
+            
         </style>
     <header>
         <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
                   <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutMe.html">About Me</a></li>
+                    <!-- <li><a href="aboutMe.html">About Me</a></li> -->
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="courseWork.html">Coursework</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -68,21 +89,22 @@
         </nav>
 </header>
     <body>
-            <div class="container">
+        <div class="container">
+            <div class="parallax">
               <div class="intro">
                   <h1>Image Gallery</h1>
                   <hr>
-                  <h4>The images below are previews of my portfolio.</h4>
+                  <h4>Below are previews of my portfolio, click on an image to enlarge it.</h4>
                   <h4>See the rest of my portfolio here: <a href="https://chelcphotos.pixieset.com">Click Here!</a></h4>
-                  <h4>Click on the images to enlarge them.</h4>
               </div>
+                <div class="hideme">
                     <div class="row">
                       <div class="col-md-4">
                         <div class="thumbnail">
                           <a href="/pictures/Laurynn.jpg" target="_blank">
                             <img src="/pictures/Laurynn.jpg" alt="Lights" style="width:100%">
                             <div class="caption">
-                              <h4>16th ave. steps, San Francisco.</h4>
+                              <h4>16th ave. steps. San Francisco, Ca.</h4>
                             </div>
                           </a>
                         </div>
@@ -92,7 +114,7 @@
                           <a href="/pictures/Venice.jpg" target="_blank">
                             <img src="/pictures/Venice.jpg" alt="Nature" style="width:100%">
                             <div class="caption">
-                              <h4>Venice canal.</h4>
+                              <h4>Venitian canal. Venice, Italy.</h4>
                             </div>
                           </a>
                         </div>
@@ -102,7 +124,7 @@
                           <a href="/pictures/pots.jpg" target="_blank">
                             <img src="/pictures/pots.jpg" alt="Fjords" style="width:100%">
                             <div class="caption">
-                              <h4>Decorative pots in Majorca, Spain.</h4>
+                              <h4>Decorative pots. Majorca, Spain.</h4>
                             </div>
                           </a>
                         </div>
@@ -112,7 +134,7 @@
                               <a href="/pictures/prom1.jpg" target="_blank">
                                 <img src="/pictures/prom1.jpg" alt="Fjords" style="width:100%">
                                 <div class="caption">
-                                  <h4>Prom portrait of Hannah.</h4>
+                                  <h4>Shinn Historical Park. Fremont, Ca.</h4>
                                 </div>
                               </a>
                             </div>
@@ -122,7 +144,7 @@
                               <a href="/pictures/lights.jpg" target="_blank">
                                 <img src="/pictures/lights.jpg" alt="Fjords" style="width:100%">
                                 <div class="caption">
-                                  <h4>Carousel lights, San Francisco.</h4>
+                                  <h4>Carousel lights. San Francisco, Ca.</h4>
                                 </div>
                               </a>
                             </div>
@@ -132,13 +154,17 @@
                           <a href="/pictures/Riley.jpg" target="_blank">
                             <img src="/pictures/Riley.jpg" alt="Fjords" style="width:100%">
                             <div class="caption">
-                              <h4>Carousel lights, San Francisco.</h4>
+                              <h4>Ghirardelli Square. San Francisco, Ca.</h4>
                             </div>
                           </a>
                     </div>
                 </div> 
+              </div>
                     </div>
                   </div>
-
+                </div>
     </body>
+    <footer>
+        <p>Chelsea Fernandes &copy; 2020</p>
+    </footer>
 </html>

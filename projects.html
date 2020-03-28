@@ -1,120 +1,178 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <meta charset="UTF-8">
-        <title>Projects</title>
-    </head>
-    <style>
-        .project{
-            margin-left: 10px;
-        }
 
-        .project > ul{
-            margin-left: 60px;
-        }
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script> $(document).ready(function () {
+            $(window).scroll(function () {
 
-        h1 {
-            margin-left: 10px;
-            text-align: center;
-        }
+                /* Check the location of each desired element */
+                $('.hideme').each(function (i) {
 
-        h2 {
-            background-color: #c1d7d7;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
+                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-        h3 {
-            margin-left: 20px;
-        }
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
 
-        p {
-            margin-left: 30px;
-            margin-right: 70px;
-        }
+                        $(this).animate({ 'opacity': '1' }, 1000);
 
-        img {
-            margin-left: 20px;
-        }
+                    }
+                });
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+</head>
+<style>
+    .project {
+        margin-left: 10px;
+        background-color: #c1d7d7;
+        margin-left: 30px;
+        margin-right: 40px;
+        /* margin-top: 20px; */
+        margin-bottom: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
 
-    </style>
-    <header>
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                    <div class="container-fluid">
-                      <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutMe.html">About Me</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="courseWork.html">Coursework</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                    </div>
-            </nav>
-    </header>
-    <body>
-        <div class = "parallax">
-            <div class="intro">
-                    <h1>Coding Projects</h1>
-                    <hr> 
-            </div>
-            <div class="project">
-                <h2>1. CourseMate Website</h2>
-                <h3>Link to site: <a href="http://coursemate.pythonanywhere.com">coursemate.com</a>
-                <h3>Project Overview:</h3>
-                <p> This website is an ongoing project that me and a friend are working on. The goal is to create a site that allows students to find course statistics, reviews, and other resources all in one place. </p>
-                <h3>Web Framework: Django</h3>
-                <h3>Languages used: Python, HTML, CSS</h3>
-                <h3>Github repository link: 
-                    <a href="https://github.com/ccfernandes/CourseMate2">click here</a>
-                </h3>
-            </div>
-            <div class ="project">
-                <h2>2. RiverNet Sensor Package</h2>
-                <h3>Project overview: </h3>
-                <p>This project was completed during my research internship in the summer of 2019.
-                    The premise of the project was to build a sensor package that could be deployed in the local Guadalupe river for a professor in the SCU Environmental Science dpt.
-                </p>
-                <p>The final product uses the Arduino Pro Mini and SD card shield to write data to a .CSV file. This is connected to sensors that record 
-                    temperature. The electrical components are then enclosed in a waterproof container that is disguised as a rock. 
-                </p>
-                <h3>language used: C++</h2>
-                <img src="pictures/riverPackage.jpg" width="250" height="160" alt="River Package" class="project1">
-                <h3>Github Link to Project: 
-                    <a href="https://github.com/ccfernandes/riverNet">River Package Repository</a>
-                </h3>
-                <h3>Project components: </h3>
-                <h3>Software: </h3>
-                <ul>
-                    <li>An arduino file (.ino) that writes to an SD card at user-defined intervals (the project required readings to be taken once every hour) </li>
-                    <li>A sensor interface file (.hpp) that defines virtual functions, common between the different sensors</li>
-                    <li>A class for each sensor, that includes a readData() function to retrieve data from the sensor.</li>
-                </ul>  
-                <h3>Design Decisions: </h3>
-                <ul>
-                    <li>An Arduino Pro Mini was used instead of a Arduino Uno in order to reduce power consumption</li>
-                    <li>A sensor interface was implemented in order to make it easier to add more sensors in the future</li>
-                    <li>A sleep mode function using the SleepyPi2 library was made to take periodic readings</li>
-                </ul>
-            </div>
-            <div class="project">
-                <h2>3. This Website!</h2>
-                <p>I made this website as a way to gain a better understanding of web development, and will continue to develop this site as 
-                    I become more experienced. 
-                </p>
-                <h3>languages used: HTML, CSS, JavaScript</h3>
-                <h3>Github Link to Project: <a href="https://github.com/ccfernandes/ccfernandes.github.io">Personal Website Repository</a></h3>
-            </div>
+    .project>ul {
+        margin-left: 60px;
+    }
+
+    h1 {
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        background-color: #c1d7d7;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h3 {
+        margin-left: 20px;
+    }
+
+    p,
+    h4 {
+        margin-left: 30px;
+        margin-right: 70px;
+    }
+
+    img {
+        margin-left: 20px;
+    }
+
+    .hideme {
+        opacity: 0;
+    }
+</style>
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="aboutMe.html">About Me</a></li> -->
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courseWork.html">Coursework</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </body>
-    <footer>
-        <p>Chelsea Fernandes &copy; 2020</p>
-    </footer>
+    </nav>
+</header>
+
+<body>
+    <div class="parallax">
+        <div class="intro">
+            <h1>Projects</h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="column-md-2">
+                <div class="project">
+                    <h2><u>CourseMate Website</u></h2>
+                    <h4>Link to site: <a href="http://coursemate.pythonanywhere.com">coursemate.com</a></h4>
+                    <h4>Github repository link:
+                            <a href="https://github.com/ccfernandes/CourseMate2">click here</a>
+                        </h4>
+                    <h4>Project Overview:</h4>
+                        <p> This website is an ongoing project that me and a friend are working on. The goal is to
+                            create a
+                            site that allows students to find course statistics, reviews, and other resources all in
+                            one place.
+                        </p>
+                        <h4>Web Framework: Django</h4>
+                        <h4>Languages used: Python, HTML, CSS</h4>
+                </div>
+            </div>
+            <div class="column-md-2">
+                <div class="project">
+                    <h2><u>RiverNet Sensor Package</u></h2>
+                    <h4>Github Link to Project:
+                            <a href="https://github.com/ccfernandes/riverNet">River Package Repository</a>
+                        </h4>
+                    <h4>Project overview: </h4>
+                    <p>This project was completed during my research internship in the summer of 2019.
+                        The premise of the project was to build a sensor package that could be deployed in the local
+                        Guadalupe
+                        river for a professor in the SCU Environmental Science dpt.
+                    </p>
+                    <p>The final product uses the Arduino Pro Mini and SD card shield to write data to a .CSV file.
+                        This is
+                        connected to sensors that record
+                        temperature. The electrical components are then enclosed in a waterproof container that is
+                        disguised as
+                        a rock.
+                    </p>
+                    <h4>language used: C++</h4>
+                    <img src="pictures/riverPackage.jpg" width="250" height="160" alt="River Package" class="project1">
+                    <h4>Software: </h4>
+                    <ul>
+                        <li>An arduino file (.ino) that writes to an SD card at user-defined intervals (the project
+                            required readings to be taken once every hour) </li>
+                        <li>A sensor interface file (.hpp) that defines virtual functions, common between the
+                            different
+                            sensors</li>
+                        <li>A class for each sensor, that includes a readData() function to retrieve data from the
+                            sensor.</li>
+                    </ul>
+                    <h4>Design Decisions: </h4>
+                    <ul>
+                        <li>An Arduino Pro Mini was used instead of a Arduino Uno in order to reduce power
+                            consumption</li>
+                        <li>A sensor interface was implemented in order to make it easier to add more sensors in
+                            the
+                            future</li>
+                        <li>A sleep mode function using the SleepyPi2 library was made to take periodic readings</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="column-md-2">
+                    <div class="project">
+                        <h2><u>This Website</u></h2>
+                        <h4>Github Link to Project: <a href="https://github.com/ccfernandes/ccfernandes.github.io">Personal
+                            Website Repository</a></h4>
+                        <p>I made this website as a way to gain a better understanding of web development, and will
+                            continue to develop this site as I become more experienced.
+                        </p>
+                        <h4>languages used: HTML, CSS, JavaScript (Jquery) </h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+<footer>
+    <p>Chelsea Fernandes &copy; 2020</p>
+</footer>
+
 </html>

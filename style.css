@@ -136,11 +136,11 @@ nav a::before{
     width: 35%;
 }
 
-.contact{
+div.contact{
     text-align: center;
 }
 
-.intro{
+div.intro{
     text-align: center;
     width: 55%;
 }
@@ -148,4 +148,8 @@ nav a::before{
 footer p{
     color: white;
     font-size: 18px;
+}
+
+.hideme{
+    opacity:0;
 }
