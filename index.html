@@ -1,174 +1,304 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
-    <script> $(document).ready(function () {
-            $('div.box').hide().fadeIn(1000).delay(1000)
-            $('section.links').hide().fadeIn(3000).delay(1000)
-            $(window).scroll(function () {
-
-                /* Check the location of each desired element */
-                $('.hideme').each(function (i) {
-
-                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                    /* If the object is completely visible in the window, fade it it */
-                    if (bottom_of_window > bottom_of_object) {
-
-                        $(this).animate({ 'opacity': '1' }, 1000);
-
-                    }
-                });
-            });
-        });
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-
-</head>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <style>
-    section.links {
-        grid-area: links;
-        padding: 10px;
-        align-self: center;
-        align-items: center;
-        margin-top: 5%;
-    }
-
-    .links h3 {
-        text-align: center;
-    }
-
-    div.box {
-        grid-area: box;
-        width: 800px;
-        background rgba(0, 0, 0, 0.4);
-        padding: 50px;
-        text-align: center;
-        margin: auto;
-        margin-top: 5%;
-        color: #444;
-        font-family: 'Abel', sans-serif;
-        border-style: solid;
-        border-color: #a6a6a6;
-    }
-
-    .box>h1 {
-        font-family: 'Montserrat', sans-serif;
-        /* font-weight: lighter; */
-    }
-
-    .body {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-areas:
-            'box links';
-        grid-template-columns: 3fr 0.7fr;
-    }
-
-    div.aboutMe {
+        /* Style the navbar */
+    #navbar {
+        overflow: hidden;
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.9);
+      }
+      
+/* Navbar links */
+      #navbar a {
+        float: left;
         display: block;
-        margin-left: 150px;
-        margin-right: 150px;
-    }
+        color: #174378; 
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
 
-    .hideme {
-        opacity: 0;
-    }
+/* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+      
 </style>
-<header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="aboutMe.html">About Me</a></li> -->
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="courseWork.html">Coursework</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<html>
+	<head>
+		<title>Chelsea Fernandes - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<body>
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <!--information box-->
-    <div class="parallax">
-        <section class="body">
-            <div class="box">
-                <!-- <img src="pictures/profile.jpg" width="250" height="165"/> -->
-                <img src="pictures/chelsBeach.jpg" width="300" height="200">
-                <div class="intro">
-                    <h1>Chelsea Fernandes</h1>
-                    <h3>Santa Clara University</h3>
-                </div>
-                <h4>Hello!
-                    Feel free to use the links in the menu as well as the icons on the right to find additional
-                    information about me!
-                </h4>
-            </div>
-            <section class="links">
-                <h3>Links to socials: </h3>
-                <a href="https://www.linkedin.com/in/chelsea-fernandes-cse/">
-                    <img src="icons/linkedicon.png " height="75" width="75" />
-                    <a href="https://github.com/ccfernandes">
-                        <img src="icons/ghicon2.png" height="75" width="75" alt="Github" />
-                        <a href="https://www.instagram.com/chelceats/">
-                            <img src="icons/instagram.png" height="75" width="75" alt="Intagram" />
-                            <a href="https://chelcphotos.pixieset.com">
-                                <img src="icons/camera.png" height="75" width="75" alt="Photography" />
-                            </a>
-            </section>
-        </section>
-        <div class="aboutMe">
-            <br />
-            <br />
-            <br />
-            <div class="hideme">
-                <h1>About Me</h1>
-                <hr>
-                <h4>Hi, I'm Chelsea! I'm an aspiring software engineer pursuing my Masters in computer science and engineering at
-                    Santa Clara University.
-                    Some of my interests include web development and machine learning. I'm always ready to tackle a new
-                    problem and can work
-                    very well on a team.
-                    <br />
-                    <br />
-                    Currently, I am working on a research project combining two of my interests: machine learning and
-                    biomedical applications.
-                    For the past year, I have been culminating the perfect dataset of brain MRI scans with the hopes of
-                    automatically detecting
-                    the presence of contrast agents in the scans. I have found it to be quite the challenge, but it is
-                    definitely something that
-                    is worth the time and effort. To learn more about my other projects (such as this website!), see
-                    "coding projects" in the
-                    navigation bar above.
-                    <br />
-                    <br />
-                    Apart from my technical interests, I am also a strong advocate for women in engineering. I am a
-                    member of the society of women
-                    in engineering, where I take part in various supportive events and am able to bond with other women
-                    in the engineering department.
-                    I have attended the San Jose Women's March for the past 3 years, which I always find to be such an
-                    uplifting experience.
-                </h4>
-            </div>
-            </section>
-        </div>
-</body>
-<footer>
-    <p>Chelsea Fernandes &copy; 2020</p>
-</footer>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<h3>Chelsea Fernandes</h3>
+									 
+									<ul class="icons">
+										<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+										<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+										<li><a href="https://www.linkedin.com/in/chelsea-fernandes-cse/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://github.com/ccfernandes" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://www.instagram.com/chelceats/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+								<div id="navbar">
+										<a href="#top">Top</a>
+										<a href="#about">About</a>
+										<a href="#projects">Projects</a>
+								</div>
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										
+										<header>
+											<h1>Hi, I’m Chelsea<br />
+											</h1>
+											<p>Software Engineer</p>
+										</header>
+										<p>I'm a motivated graduate computer engineering student seeking full- time software engineering opportunities starting in June 2022.</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul>
+
+									</div>
+									<span class="image object">
+										<img src="images/profile.jpg" alt="" />
+									</span>
+							
+								</section>
+
+							<!-- Section -->
+								<section>
+									<div id="about">
+									<header class="major">
+										<h2>About Me</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon solid fa-paper-plane"></span>
+											<div class="content">
+												<h3>Student</h3>
+												<p>I graduated from SCU with a B.S. in Computer Science and Engineering in June 2021, and am currently pursing my M.S. in the same field at SCU as well.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-gem"></span>
+											<div class="content">
+												<h3>Coder</h3>
+												<p>Coding projects are never a task, rather a puzzle waiting to be solved. My favorite languages are C++ and Python.</p>
+											</div>
+										</article>
+										<!-- <article>
+											<span class="icon solid fa-rocket"></span>
+											<div class="content">
+												<h3>Quam lorem ipsum</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article> -->
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Food Blogger</h3>
+												<p>I like photography and trying new foods, so I turned the 2 into a little passion project: food blogging! I have spent the past 6 months growing my instagram account @chelceats, and so far I have amassed more than 900 followers!</p>
+											</div>
+										</article>
+									</div>
+								</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<div id="projects">
+									<header class="major">
+										<h2>Projects</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="yelp.html" class="image"><img src="images/yelp.png" alt="" /></a>
+											<h3>Yelp Case Study</h3>
+											<p>A quarter-long project completed for my graduate project management course where I defined a product feature, developed product requirements, 
+												designed the UI using Figma, and outlined all of the information in a PRD.
+											</p>
+											<ul class="actions">
+												<li><a href="yelp.html" class="button">Learn More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/scu.png" alt="" /></a>
+											<h3>Alzheimer's Disease Diagnosis Tool</h3> 
+											<p>A web-based diagnostic support tool to aid in the diagnosis of Alzheimer's Disease. Implemented a decision tree classifier to classify 
+												patients into 3 possible stages of AD. Won the Best Session Award at the 2021 SCU Engineering Senior Design Conference.
+											</p>
+											<ul class="actions">
+												<li><a href="#" class="button">Coming Soon</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/intellivo.png" alt="" /></a>
+											<h3>Intellivo</h3>
+											<p>A web platform that connects users to talk about current events using a clustering algorithm.
+												I Served as product manager for team of 5 to keep track of progress over 6 week period.
+												Project won award for best technical product at the 2020 InternHacks Hackathon (Github repo: intellivo)</p>
+											<ul class="actions">
+												<li><a href="#" class="button">Coming Soon</a></li>
+											</ul>
+										</article>
+										<!-- <article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>Sed etiam facilis</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article> -->
+										<!-- <article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>Feugiat lorem aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Amet varius aliquam</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article> -->
+									</div>
+									</div>
+								</section>
+
+						</div>
+						<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<a href="images/resume_nov.pdf" class="button fit">Resume</a>
+							<!-- Search -->
+								<!-- <section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="experience.html">Experience</a></li>
+										<!-- <li><a href="elements.html">Elements</a></li> -->
+										<li>
+											<span class="opener">Projects</span>
+											<ul>
+												<li><a href="yelp.html">Yelp Case Study</a></li>
+												<li><a href="#">AD Clinical Diagnostic Tool <br>(coming soon)</a></li>
+												<li><a href="#">Intellivo - 2020 Hackathon <br>(coming soon)</a></li>
+											</ul>
+										</li>
+										<!-- <li><a href="#">Amet Lacinia</a></li> -->
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Highlights</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="yelp.html" class="image"><img src="images/yelp.png" alt="" /></a>
+											<p>Learn more about my Yelp product idea!</p>
+										</article>
+										<article>
+											<p>"In order to succeed, your desire for success should be greater than your fear of failure."</p>
+											<p><i>- Bill Cosby</i></p>
+										</article>
+									</div>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul> -->
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<ul class="contact">
+										<li class="icon solid fa-envelope">ccfernandes@scu.edu</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+			
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+	<script>
+			// When the user scrolls the page, execute myFunction
+			window.onscroll = function() {myFunction()};
+	
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+	
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+	
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+			}
+		</script>
 </html>

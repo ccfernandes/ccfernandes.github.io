@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<style>
+        /* Style the navbar */
+    #navbar {
+        overflow: hidden;
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.9);
+      }
+      
+      /* Navbar links */
+      #navbar a {
+        float: left;
+        display: block;
+        color: #174378; 
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+
+        /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+      
+    </style>
+<html>
+	<head>
+		<title>Chelsea Fernandes - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+                                    <h3>Chelsea Fernandes</h3>
+									<ul class="icons">
+										<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+										<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+										<li><a href="https://www.linkedin.com/in/chelsea-fernandes-cse/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://github.com/ccfernandes" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://www.instagram.com/chelceats/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+				<!-- Content -->
+                        <section id="banner">
+                                <div class="content">
+                                    <header>
+                                        <h2 style="text-align: center">Yelp</h2>
+
+                                        <h1 style="text-align: center">Favorite Menu Items List</h1>
+                                        <h2 style="color:grey; text-align: center">September-December 2020</h2>
+                                        <h3 style="color:grey; text-align: center">Solo Project</h3>
+                                    </header>
+                                </div>
+                                <span class="image object">
+                                    <img src="images/yelp.png" alt="" />
+                                </span>
+                            </section>
+            
+                        <div id="navbar">
+                            <span>
+                                <a href="#problem">Introduction</a>
+                                <a href="#demo">Final Prototype</a>
+                                <a href="#research">Research</a>
+                                <a href="#journey">User Journey</a>
+                                <a href="#features">Description of Features</a>
+                                <a href="#prototype">Prototyping</a>
+                                <a href="#metrics">Metrics</a>
+                                <a href="#launch">Launch Plan</a>
+                            </span>
+                        </div>
+
+                        <div id="problem">
+                            <hr class="major" />
+                            <h2>Introduction</h2>
+                            <p>Yelp’s goal is to connect people with local businesses, and are currently able to achieve this 
+                                by providing a platform for past customers to share their opinions about said businesses - good or bad - 
+                                in hope of helping future customers with the decision of ultimately supporting the establishment or not. 
+                                The problem with Yelp currently is that the information provided by past customers is not structured enough 
+                                to make it easy to make a quick decision, specifically for menu items. This especially impacts users who are 
+                                on-the-go and do not have time to research restaurants or shops for an extended period of time. This also 
+                                impacts users who make their decision solely based on the food items offered at the establishment. </p>
+                            <h2>Objectives</h2>
+                            <ul>
+                                <li>Provide Yelpers with information about the menu in an easily digestible format, such as a ranked list. 
+                                    The product should limit the need to go through hundreds of pictures or reviews in search for the best items to try on the menu</li>
+                                <li>Increase engagement on Yelp restaurant business pages by offering a voting method that does not require writing any words. </li>
+                            </ul>
+                        </div>
+                        <div id="demo">
+                            <hr class="major" />
+                            <h2>Final Prototype</h2>
+                            <iframe width="740" height="600" src="https://www.youtube.com/embed/i3rwo7EzS9Q" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                        </div>
+                        <div id="research">
+                        <hr class="major" />
+                        
+                            <h2>User Research</h2>
+                            <p>A series of open-ended questions was initially asked to 10 people on separate occasions to determine the intended 
+                                market of the product and gain an understanding of how users currently use Yelp to decide which restaurant to eat at.
+                            </p>
+                            <h3>Participant Profile</h3>
+                            <ul>
+                                <li>Age range: 19-45</li>
+                                <li>Gender: 3 male, 7 female </li>
+                                <li>Occupations: 6 students, 4 working professionals</li>
+                            </ul>
+                            <h3>Key Insights</h3>
+                            <ul>
+                                <li>There are two main factors users consider when deciding a place to eat at: Average star review (3.5+) and the type of food offered by the establishment</li>
+                                <li>There are three common methods users utilize when researching an establishment's menu offerings:</li>
+                                <ul>
+                                    <li>Pictures of the menu</li>
+                                    <li>In-built menu (sourced through third-party like Grubhub)</li>
+                                    <li>Written reviews</li>
+                                </ul>
+                            </ul>
+                            <h4 style="text-align: center">From the user research, it is clear that there is a need for a way to highlight the best parts of the menu in a format that is quick and easy to view. </h4>
+                        </div>
+                        <div id="journey">
+                            <hr class="major" />
+                            <h2>Critical User Journey</h2>
+                            <h3>User Persona</h3>
+                            <p>Sarah is a working professional who wants to get something for dinner nearby. She doesn’t have much time to extensively research restaurants but wants to preview 
+                                the menu to make sure that the establishment has good dishes that other Yelpers have liked.</p>
+                            <h3>User Expectations</h3>
+                            <ul>
+                                <li>Organized and useful information about the menu</li>
+                                <li>Straightforward to use</li>
+                            </ul>
+                            <h3>User Journey</h3>
+                            <h4 style="color: grey">Step 1: Search for dinner on Yelp App</h4>
+                            <ul>
+                                <li>Sarah types “dinner” in the search bar and a list of search results is provided. </li>
+                                <li>She clicks the first result, which navigates her to the establishment’s page.</li>
+                            </ul>
+                            <h4 style="color: grey">Step 2: View ranked restaurant menu items (User Story #1)</h4>
+                            <ul>
+                                <li>Sarah scrolls down a little to the Fan Favorites section, which shows a ranked list of the top 5 menu items from the restaurant. 
+                                    The ranking is based on the number of upvotes for each menu item, which is displayed to the right of the list. 
+                                    </li>
+                                <li>Sarah is intrigued by the 2nd and 3rd item on the ranked list, and decides to order those items from the establishment.</li>
+                            </ul>
+                            <h4 style="color: grey">Step 3: Make purchase from restaurant</h4>
+                            <ul>
+                                <li>Sarah orders from the restaurant and eats her meal. She really enjoyed one of the dishes and wants to contribute to the ranked list that she had previously viewed. </li>
+                            </ul>
+                            <h4 style="color: grey">Step 4: Vote for her favorite items offered at a restaurant (User Story #2)</h4>
+                            <ul>
+                                <li>Sarah navigates back to the Fan Favorites section in the restaurant’s Yelp page and clicks on the Vote button right below the list, which navigates her to the voting page.</li>
+                                <li>Since she liked the fried rice, she taps on the corresponding item in the list and submits her vote via “Submit Vote” at the bottom of the screen. Her vote is now reflected in the 
+                                    upvote count in the main view of the Fan Favorites section.</li>
+                            </ul>
+                        </div>
+                        <div id="features">
+                            <hr class="major" />
+                            <h2>Description of Features</h2>
+                            <h3>Prerequisite</h3>
+                            <p>In order for the product to be visible on a business’s Yelp page, the establishment must have satisfied the following conditions:</p>
+                            <ul>
+                                <li>The establishment has claimed it’s page on Yelp (denoted by blue checkmark at the top).</li>
+                                <li>The establishment has uploaded their restaurant menu to Grubhub (or another relevent 3rd-party) and has connected their Grubhub account to Yelp.</li>
+                            </ul>
+                            <h3>User Story #1</h3>
+                            <p>As a Yelper, I want to be able to view popular menu items from a restaurant based on other Yelper’s experiences.</p>
+                            <h4>Acceptance Criteria </h4>
+                            <ul>
+                                <li>The page must display the top 5 most voted menu items for a restaurant as a list below the “start a review” section</li>
+                                <li>The list must contain the following information, which is stored and accessed through a database:</li>
+                                <ul>
+                                    <li>Numbered ranking</li>
+                                    <li>Name of menu item</li>
+                                    <li>Number of votes</li>
+                                </ul>
+                                <li>At the bottom of the section, a “vote” button is displayed, which navigates user to the voting page (User Story #2)</li>
+                            </ul>
+                            <h3>User Story #2</h3>
+                            <p>As a Yelper, I want to contribute to the ranked list based on my own experience at the establishment by voting for my favorite menu items.</p>
+                            <h4>Acceptance Criteria</h4>
+                            <ul>
+                                <li>The Yelper accesses the voting page using a “Vote” button below the ranked list.</li>
+                                <li>The voting page lists all menu items offered by an establishment, which is populated by the restaurant through a third party (ex. Grubhub) or other solution.</li>
+                                <li>The menu is organized by menu item type (ex: appetizers, drinks, main menu..etc), denoted by a header with the item type name. </li>
+                                <li>Each menu item has a checkbox that the user can tap or select to add to their vote.</li>
+                                <li>The Yelper can vote for at most 3 menu items.</li>
+                                <li>The counter stored in the database is incremented by 1 for each item vote.</li>
+                                <li>A red “Submit Vote” button is displayed at the bottom of the list (desktop) or screen (mobile) and must be pressed to submit their vote.</li>
+                                <li>The Yelper is sent back to the establishment’s Yelp page upon completion of the vote. </li>
+                            </ul>
+
+                        </div>
+                        <div id="prototype">
+                            <hr class="major" />
+                            <h2>Prototyping</h2>
+                            <h3>Initial Flow Exploration</h3>
+                            <p>I explored different user experience flows of the menu listing feature using <b>Figma</b>.</p>
+                            <img src="images/init_proto.png" alt="" />
+                            <h3>High Fidelity Flow Exploration</h3>
+                            <p>The following designs were created upon discussing with 5 previous Yelp users what was liked/disliked about the initial design.</p>
+                            <img src="images/final_proto.png" alt="" />
+                        </div>
+                        <div id="metrics">
+                            <hr class="major" />
+                            <h2>Metrics</h2>
+                                <table>
+                                        <tr>
+                                        <th>#</th>
+                                        <th>Metric</th>
+                                        <th>Purpose</th>
+                                        <th>Goal</th>
+                                        </tr>
+                                        <tr>
+                                        <td>1</td>
+                                        <td>Ratio of Number of People who Vote to Number of Written Reviews</td>
+                                        <td>To compare engagement with the new feature versus current engagement via written reviews. (user acquisition)</td>
+                                        <td>Increase user engagement in the application by 60%. 
+                                            Also the ratio of votes to reviews should be at minimum 2:1.
+                                            <br><b>Reasoning: </b> The voting feature is a simpler and less time-consuming way to engage on Yelp compared to writing reviews, so there should be more votes.
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                        <td>2</td>
+                                        <td>Number of times one user interacts with the feature</td>
+                                        <td>Give insight into how frequently a Yelper uses the feature when researching restaurants/eats.</td>
+                                        <td>There is a feature interaction 7 out of 10 restaurant page views.
+                                            <br><b>Reasoning: </b> A yelper should use this feature when visiting any restaurant Yelp page as an aid.    
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>3</td>
+                                        <td>Length of Time Spent Viewing List Feature</td>
+                                        <td>To measure overall engagement with the feature.</td>
+                                        <td>View the section for a minimum of 5 seconds.
+                                            <br><b>Reasoning: </b> Enough time to scan the list and decide to vote (if applicable).
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>4</td>
+                                        <td>Percentage of users interacting with feature per day/month</td>
+                                        <td>To gauge consistency of interaction with the product by users.</td>
+                                        <td>40% of all users interact with feature 
+                                            <br><b>Reasoning: </b> Yelp has many different use cases, and approximately 60% of all users are looking up businesses. 40% is a good baseline, since the product is only applicable to restaurants.
+                                        </td>
+                                        </tr>
+                                      </table>  
+                        </div>
+                        <div id="launch">
+                            <hr class="major" />
+                            <h2>Launch Plan</h2>
+                            <p>The following table outlines general information about the product go-to-market plan:</p>
+                            <table>
+                                <tr>
+                                    <th>V1 Launch Date</th>
+                                    <td>4 months from start date</td>
+                                </tr>
+                                <tr>
+                                    <th>Pricing</th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th>Place</th>
+                                    <td>Yelp home page for a claimed restaurant businesses</td>
+                                </tr>
+                                <tr>
+                                    <th>Devices</th>
+                                    <td>IOS, Android, Web</td>
+                                </tr>
+                                <tr>
+                                    <th>How</th>
+                                    <td><b>Mobile Devices:</b> Version upgrade through the App Store (Apple) or Google Play (Android)
+                                        <br><b>Web Application: </b> No upgrade needed for the user. Deploy changes to the server and access at yelp.com</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h3>Promotional Strategy</h3>
+                            <p>The following outlines our promotional strategy once we are closer to our launch date.</p>
+                            <ul>
+                                <li>Beta Launch: Start by releasing the product to Yelp Elite Members (very active members on Yelp who get invited to exclusive 
+                                    events by posting reviews and pictures). From there, if the response is positive, Yelp can then release the Beta version to a 
+                                    small portion of users in high volume regions for general population testing.</li>
+                                <li>Once we are about 2 weeks away from our release date, ask Yelp Elite Members to promote the new product on their respective 
+                                    social media platforms, from which they will be invited to an exclusive event(s). Yelp currently uses a similar strategy to increase 
+                                    engagement with writing reviews. </li>
+                            </ul>
+                        </div>
+                    </section>
+
+            </div>
+        </div>			
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<a href="images/resume_nov.pdf" class="button fit">Resume</a>
+							<!-- Search -->
+								<!-- <section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="experience.html">Experience</a></li>
+										<!-- <li><a href="elements.html">Elements</a></li> -->
+										<li>
+											<span class="opener">Projects</span>
+											<ul>
+												<li><a href="yelp.html">Yelp Case Study</a></li>
+												<li><a href="#">AD Clinical Diagnostic Tool <br>(coming soon)</a></li>
+												<li><a href="#">Intellivo - 2020 Hackathon <br>(coming soon)</a></li>
+											</ul>
+										</li>
+										<!-- <li><a href="#">Amet Lacinia</a></li> -->
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Highlights</h2>
+									</header>
+									<div class="mini-posts">
+										<!-- <article>
+											<a href="yelp.html" class="image"><img src="images/yelp.png" alt="" /></a>
+											<p>Learn more about my Yelp product idea!</p>
+										</article>  -->
+										<article>
+											<p>"In order to succeed, your desire for success should be greater than your fear of failure."</p>
+											<p><i>- Bill Cosby</i></p>
+										</article>
+									</div>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul> -->
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<ul class="contact">
+										<li class="icon solid fa-envelope">ccfernandes@scu.edu</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+			
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+    </body>
+    <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+    
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+    
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+    
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+        </script>
+</html>
